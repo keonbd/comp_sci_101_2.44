@@ -1,0 +1,39 @@
+''' Type your code here. '''
+change = float(input())
+dollars = 1.00
+quarters = 0.25
+dimes = 0.10
+nickels = 0.05
+pennies = 0.01
+
+if change == 0:
+    print('No change')
+if change >= 100:
+    if change//100 >= 2:
+        print(int(change//100), 'Dollars')
+    else:
+        print(int(change//100), 'Dollar')
+change = change%100
+if change >= 25:
+    if change//25 >= 2:
+        print(int(change//25), 'Quarters')
+    else:
+        print(int(change//25), 'Quarter')
+change = change%25
+if change >= 10:
+    if change//10 >= 2:
+        print(int(change//10), 'Dimes')
+    else:
+        print(int(change//10), "Dime")
+change = change%10
+if change >= 5:
+    if change//5 >= 2:
+        print(int(change//5), 'Nickels')
+    else:
+        print(int(change//5), "Nickel")
+change = change%5
+if change >= 1:
+    if change//1 >= 2:
+        print(int(change//1), 'Pennies')
+    else:
+        print(int(change//1), "Penny")
